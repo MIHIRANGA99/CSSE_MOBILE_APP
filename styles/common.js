@@ -3,7 +3,7 @@ import Colors from "./Colors";
 
 const commonStyles = StyleSheet.create({
     button: {
-        backgroundColor: Colors.primary,
+        backgroundColor: "#061672",
         paddingHorizontal: 4,
         paddingVertical: 10,
         marginTop: 12,

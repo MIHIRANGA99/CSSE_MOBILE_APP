@@ -65,42 +65,31 @@ const  RegisterScreen = ({ navigation }) =>{
      }}
     >Register</Text>
 
-    <View style={{
-        flexDirection:"row",
-        alignItems:"center",
-        marginHorizontal:55,
-        height:"2%",
-        borderWidth:2,
-        marginTop:20,
-        paddingHorizontal:10,
-        borderColor:"#00716F",
-        borderRadius:23,
-        paddingVertical:2
-    }}>
+    <View >
       
         <TextInput 
             placeholder="Name"
             onChange={(e) => setName(e.nativeEvent.text)}
             value={name}
             placeholderTextColor="#00716F"
-            style={{paddingHorizontal:10}}
+            style={{
+              flexDirection:"row",
+              alignItems:"center",
+              marginHorizontal:55,
+              height:"5%",
+              borderWidth:2,
+              marginTop:10,
+              paddingHorizontal:10,
+              borderColor:"#00716F",
+              borderRadius:23,
+              paddingVertical:2
+          }}
         />
 
         
 
-    </View>
-    <View style={{
-        flexDirection:"row",
-        alignItems:"center",
-        marginHorizontal:55,
-        borderWidth:2,
-        height:"2%",
-        marginTop:15,
-        paddingHorizontal:10,
-        borderColor:"#00716F",
-        borderRadius:23,
-        paddingVertical:2
-    }}>
+ 
+
        
        <TextInput 
       
@@ -108,26 +97,26 @@ const  RegisterScreen = ({ navigation }) =>{
             value={role}
             placeholder="UserRole"
             placeholderTextColor="#00716F"
-            style={{paddingHorizontal:10}}
+            style={{
+              flexDirection:"row",
+              alignItems:"center",
+              marginHorizontal:55,
+              height:"5%",
+              borderWidth:2,
+              marginTop:10,
+              paddingHorizontal:10,
+              borderColor:"#00716F",
+              borderRadius:23,
+              paddingVertical:2
+          }}
         />
 
 
         
    
 
-    </View>
-    <View style={{
-        flexDirection:"row",
-        alignItems:"center",
-        marginHorizontal:55,
-        borderWidth:2,
-        height:"2%",
-        marginTop:15,
-        paddingHorizontal:10,
-        borderColor:"#00716F",
-        borderRadius:23,
-        paddingVertical:2
-    }}>
+
+
        
        <TextInput 
          
@@ -135,26 +124,26 @@ const  RegisterScreen = ({ navigation }) =>{
             value={compName}
             placeholder="Company Name"
             placeholderTextColor="#00716F"
-            style={{paddingHorizontal:10}}
+            style={{
+              flexDirection:"row",
+              alignItems:"center",
+              marginHorizontal:55,
+              height:"5%",
+              borderWidth:2,
+              marginTop:10,
+              paddingHorizontal:10,
+              borderColor:"#00716F",
+              borderRadius:23,
+              paddingVertical:2
+          }}
         />
 
 
         
    
 
-    </View>
-    <View style={{
-        flexDirection:"row",
-        alignItems:"center",
-        marginHorizontal:55,
-        borderWidth:2,
-        marginTop:15,
-        height:"2%",
-        paddingHorizontal:10,
-        borderColor:"#00716F",
-        borderRadius:23,
-        paddingVertical:2
-    }}>
+ 
+
        
        <TextInput 
           
@@ -162,26 +151,25 @@ const  RegisterScreen = ({ navigation }) =>{
             onChange={(e) => setSupAddress(e.nativeEvent.text)}
             value={supAddress}
             placeholderTextColor="#00716F"
-            style={{paddingHorizontal:10}}
+            style={{
+              flexDirection:"row",
+              alignItems:"center",
+              marginHorizontal:55,
+              height:"5%",
+              borderWidth:2,
+              marginTop:10,
+              paddingHorizontal:10,
+              borderColor:"#00716F",
+              borderRadius:23,
+              paddingVertical:2
+          }}
         />
 
 
         
    
 
-    </View>
-    <View style={{
-        flexDirection:"row",
-        alignItems:"center",
-        marginHorizontal:55,
-        borderWidth:2,
-        marginTop:15,
-        height:"2%",
-        paddingHorizontal:10,
-        borderColor:"#00716F",
-        borderRadius:23,
-        paddingVertical:2
-    }}>
+
        
        <TextInput 
           
@@ -189,26 +177,25 @@ const  RegisterScreen = ({ navigation }) =>{
             onChange={(e) => setEmail(e.nativeEvent.text)}
             value={email}
             placeholderTextColor="#00716F"
-            style={{paddingHorizontal:10}}
+            style={{
+              flexDirection:"row",
+              alignItems:"center",
+              marginHorizontal:55,
+              height:"5%",
+              borderWidth:2,
+              marginTop:10,
+              paddingHorizontal:10,
+              borderColor:"#00716F",
+              borderRadius:23,
+              paddingVertical:2
+          }}
         />
 
 
         
    
 
-    </View>
-    <View style={{
-        flexDirection:"row",
-        alignItems:"center",
-        marginHorizontal:55,
-        borderWidth:2,
-        height:"2%",
-        marginTop:15,
-        paddingHorizontal:10,
-        borderColor:"#00716F",
-        borderRadius:23,
-        paddingVertical:2
-    }}>
+   
        
        <TextInput 
        secureTextEntry
@@ -216,26 +203,24 @@ const  RegisterScreen = ({ navigation }) =>{
             onChange={(e) => setPwd(e.nativeEvent.text)}
             value={pwd}
             placeholderTextColor="#00716F"
-            style={{paddingHorizontal:10}}
+            style={{
+              flexDirection:"row",
+              alignItems:"center",
+              marginHorizontal:55,
+              height:"5%",
+              borderWidth:2,
+              marginTop:10,
+              paddingHorizontal:10,
+              borderColor:"#00716F",
+              borderRadius:23,
+              paddingVertical:2
+          }}
         />
 
 
         
    
 
-    </View>
-    <View style={{
-        flexDirection:"row",
-        alignItems:"center",
-        marginHorizontal:55,
-        borderWidth:2,
-        marginTop:15,
-        height:"2%",
-        paddingHorizontal:10,
-        borderColor:"#00716F",
-        borderRadius:23,
-        paddingVertical:2
-    }}>
        
        <TextInput 
             secureTextEntry
@@ -244,7 +229,18 @@ const  RegisterScreen = ({ navigation }) =>{
             onChange={(e) => setCpwd(e.nativeEvent.text)}
             value={cpwd}
             placeholderTextColor="#00716F"
-            style={{paddingHorizontal:10}}
+            style={{
+              flexDirection:"row",
+              alignItems:"center",
+              marginHorizontal:55,
+              height:"5%",
+              borderWidth:2,
+              marginTop:10,
+              paddingHorizontal:10,
+              borderColor:"#00716F",
+              borderRadius:23,
+              paddingVertical:2
+          }}
         />
     {pwd !== cpwd && pwd !== "" && cpwd !== "" ? (
             <Text style={{ color: "red", textAlign: "center" }}>
@@ -253,7 +249,7 @@ const  RegisterScreen = ({ navigation }) =>{
           ) : (
             <Text> </Text>
           )}
-    </View>
+    
 
    
   <TouchableOpacity
@@ -265,7 +261,7 @@ const  RegisterScreen = ({ navigation }) =>{
       marginHorizontal:55,
       alignItems:"center",
       justifyContent:"center",
-      marginTop:30,
+      marginTop:20,
       backgroundColor:"#FF9720",
       paddingVertical:10,
       borderRadius:23
@@ -278,11 +274,13 @@ const  RegisterScreen = ({ navigation }) =>{
   style={{
     marginHorizontal:55,
     alignItems:"center",
+    marginTop:"20",
     justifyContent:"center",
    
 
 }}
 title=" If You Have Account? Login" onPress={() => navigation.navigate("Login")} />
+</View>
 
 </View>
 

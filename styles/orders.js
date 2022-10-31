@@ -19,6 +19,17 @@ const orderStyles = StyleSheet.create({
     borderRadius: 22,
   },
 
+
+  orderCard3: {
+    backgroundColor:"#FAE7CE",
+    margin: 3,
+    width:"100%",
+    padding: 9,
+    height:"17%",
+    borderRadius: 23,
+  },
+
+
   items: {
     display: "flex",
     flexDirection: "row",

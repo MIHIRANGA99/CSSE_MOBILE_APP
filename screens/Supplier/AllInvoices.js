@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { ScrollView, Text, TouchableOpacity, View } from 'react-native'
+import { ScrollView, Text, TouchableOpacity, View ,Image} from 'react-native'
 import commonStyles from '../../styles/common';
 import orderStyles from '../../styles/orders';
 
@@ -17,12 +17,17 @@ const AllInvoices = ({ route, navigation }) => {
     })
 
     return (
-        <View style = {{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <View style = {{flex: 1, justifyContent: 'center', alignItems: 'center',backgroundColor:"#E6880D" }}>
+
+<Image source ={require('../pic/aqaq.png')}
+        style={{width:"50%",height:"30%", borderRadius: 22,}}
+    />
+
             <ScrollView style = {{display: 'flex', flexDirection: 'column'}}>
                 {
                     invoices.map((invoice, index) => (
-                        <View style = {orderStyles.orderCard} key={invoice + index}>
-                            <Text style = {{fontWeight: '600', opacity: 0.6, textAlign: 'center'}}>Order Details</Text>
+                        <View style = {orderStyles.orderCard3} key={invoice + index}>
+                            <Text style = {{fontWeight: '600', opacity: 0.6, textAlign: 'center',fontSize:"20"}}>Order Details</Text>
                             <View style = {orderStyles.items}>
                                 <View>
                                     <Text style = {{marginVertical: 2}}>Order ID</Text>
