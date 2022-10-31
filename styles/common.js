@@ -13,6 +13,19 @@ const commonStyles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center"
     },
+
+    button1: {
+        backgroundColor: "#1D0FE2",
+        paddingHorizontal: 4,
+        paddingVertical: 10,
+        marginTop: 12,
+        borderRadius: 50,
+        marginHorizontal: 16,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+
     textView: {
         backgroundColor: Colors.inputBG,
         marginVertical: 4,

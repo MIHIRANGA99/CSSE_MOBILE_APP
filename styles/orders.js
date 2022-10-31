@@ -3,40 +3,59 @@ import Colors from "./Colors";
 
 const orderStyles = StyleSheet.create({
   orderCard: {
-    backgroundColor: Colors.inputBG,
-    margin: 2,
-    padding: 5,
-    borderRadius: 12,
+    backgroundColor:"#FAE7CE",
+    margin: 3,
+    padding: 8,
+    height:"25%",
+    borderRadius: 22,
   },
+
+  orderCard1: {
+    backgroundColor:"#FAE7CE",
+    margin: 2,
+    width:"100%",
+    padding: 9,
+    height:"18%",
+    borderRadius: 22,
+  },
+
   items: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 6,
+    padding: 16,
   },
   orderID: {
     marginVertical: 2,
     color: "white",
-    backgroundColor: Colors.primary,
+    backgroundColor:"#2517E4",
     borderRadius: 12,
     padding: 4,
   },
   status: {
     marginVertical: 2,
     color: "white",
-    textAlign: "center"
+    textAlign: "center",
+    fontSize:"20"
   },
   ok: {
-    backgroundColor: "#196e02",
-    borderRadius: 12
+    backgroundColor: "#43E417",
+    borderRadius: 12,
+    fontSize:"20",
+    height:"14%"
+    
   },
   declined: {
-    backgroundColor: "#820101",
-    borderRadius: 12
+    backgroundColor: "#E21A1A",
+    borderRadius: 12,
+
+    height:"14%"
   },
   pending: {
     backgroundColor: "#997603",
-    borderRadius: 12
+    borderRadius: 10,
+    height:"14%",
+
   }
 });
 

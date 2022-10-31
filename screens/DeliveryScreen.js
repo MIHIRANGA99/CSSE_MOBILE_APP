@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { ScrollView, Text, TouchableOpacity, View,Image } from "react-native";
 import commonStyles from "../styles/common";
 import orderStyles from "../styles/orders";
 
@@ -30,12 +30,16 @@ const DeliveryScreen = ({ route, navigation }) => {
   };
 
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" , backgroundColor:"#E6880D" }}>
+      
+      <Image source ={require('../screens/pic/order3.gif')}
+        style={{width:"90%",height:"20%", borderRadius: 22,}}
+    />
       <ScrollView style={{ display: "flex", flexDirection: "column" }}>
         {deliv.map((order, index) => (
-          <View style={orderStyles.orderCard} key={order + index}>
+          <View style={orderStyles.orderCard} key={order + index} >
             <Text
-              style={{ fontWeight: "600", opacity: 0.6, textAlign: "center" }}
+              style={{ fontWeight: "600", opacity: 0.6, textAlign: "center" , fontSize:"19"}}
             >
               Order Details
             </Text>
