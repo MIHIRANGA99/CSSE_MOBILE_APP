@@ -7,6 +7,7 @@ import {
   View,
   TouchableOpacity,
   Alert,
+  Image
 } from "react-native";
 import commonStyles from "../../styles/common";
 
@@ -67,8 +68,13 @@ const NewInvoiceScreen = ({ route, navigation }) => {
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
+        backgroundColor:"#E6880D"
       }}
     >
+        <Image source ={require('../pic/order3.gif')}
+        style={{width:"100%",height:"34%"}}
+    />
+    <Text  style = {{fontWeight: '600', opacity: 0.6, textAlign: 'center', fontSize:"28"}} >Add new Invoice</Text>
       <ScrollView style={{ width: "80%", margin: 2 }}>
         <TextInput
           value={invoiceID}

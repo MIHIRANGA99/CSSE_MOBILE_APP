@@ -14,7 +14,9 @@ const dashboardStyles = StyleSheet.create({
         alignItems: "center",
         backgroundColor:"#FF9720",
         padding: 40,
+        marginTop:"9%",
         margin: 4,
+       height:"20%",
         borderRadius: 12
     }
 })
