@@ -86,9 +86,9 @@ const NewOrderScreen = ({ route, navigation }) => {
   };
 
   return (
-    <View>
+    <View style={{backgroundColor:"#E6880D"}}>
       <ScrollView>
-        <Text style = {{textAlign: "center", fontSize: 16, fontWeight: "600", marginTop: 12}}>Select a Supplier</Text>
+        <Text style = {{textAlign: "center", fontSize: 16, fontWeight: "600", marginTop: 12,fontSize:"20"}}>Select a Supplier</Text>
         <ScrollView horizontal style = {{display: "flex", flexDirection: "row", marginVertical: 12}}>
             {suppliers.map((sup, index) => (
               <TouchableOpacity

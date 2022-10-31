@@ -6,7 +6,7 @@ const commonStyles = StyleSheet.create({
         backgroundColor: "#061672",
         paddingHorizontal: 4,
         paddingVertical: 10,
-        marginTop: 12,
+        marginTop: 22,
         borderRadius: 50,
         marginHorizontal: 16,
         display: "flex",
@@ -27,10 +27,12 @@ const commonStyles = StyleSheet.create({
     },
 
     textView: {
-        backgroundColor: Colors.inputBG,
+        backgroundColor: "#EBE0CA",
         marginVertical: 4,
+        
         paddingHorizontal: 16,
         paddingVertical: 10,
+        marginBottom:"6%",
         borderRadius: 12,
         fontSize: 16,
         color: Colors.primary,
@@ -38,7 +40,7 @@ const commonStyles = StyleSheet.create({
     },
     buttonText: {
         color: 'white',
-        fontSize: 16
+        fontSize: 19
     }
 })
 

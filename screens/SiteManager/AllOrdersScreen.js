@@ -1,6 +1,6 @@
 import axios, { CanceledError } from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Alert, ScrollView, Text, View } from 'react-native'
+import { Alert, ScrollView, Text, View,Image } from 'react-native'
 import Colors from '../../styles/Colors';
 import orderStyles from '../../styles/orders';
 
@@ -31,12 +31,20 @@ const AllOrdersScreen = ({route, navigation}) => {
     },[])
 
   return (
-    <View style = {{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+    <View style = {{flex: 1, justifyContent: 'center', alignItems: 'center' , backgroundColor:"#E6880D"}}>
+  
+
+        <Image source ={require('../pic/te.jpg')}
+        style={{width:"100%",height:"34%"}}
+    />
+
+     
+   
         <ScrollView style = {{display: 'flex', flexDirection: 'column'}}>
             {
                 orders.map((order, index) => (
-                    <View style = {orderStyles.orderCard} key={order + index}>
-                        <Text style = {{fontWeight: '600', opacity: 0.6, textAlign: 'center'}}>Order Details</Text>
+                    <View style = {orderStyles.orderCard5} key={order + index}>
+                        <Text style = {{fontWeight: '600', opacity: 0.6, textAlign: 'center', fontSize:"20"}}>Order Details</Text>
                         <View style = {orderStyles.items}>
                             <View>
                                 <Text style = {{marginVertical: 2}}>Order ID</Text>
