@@ -12,6 +12,7 @@ const dashboardStyles = StyleSheet.create({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor:"#FF9720",
         padding: 40,
         margin: 4,
         borderRadius: 12

@@ -45,6 +45,7 @@ const LoginScreen = ({ navigation }) => {
      style={{
         flexDirection:"row",
         alignItems:"center",
+        height:"3%",
         marginHorizontal:55,
         borderWidth:2,
         marginTop:15,
@@ -72,6 +73,7 @@ const LoginScreen = ({ navigation }) => {
         alignItems:"center",
         marginHorizontal:55,
         borderWidth:2,
+        height:"3%",
         marginTop:15,
         paddingHorizontal:10,
         borderColor:"#00716F",
@@ -84,7 +86,7 @@ const LoginScreen = ({ navigation }) => {
    secureTextEntry
    placeholder="Password"
    placeholderTextColor="#00716F"
-   style={{paddingHorizontal:10}}
+   style={{paddingHorizontal:10 ,}}
       onChange={(e) => setPwd(e.nativeEvent.text)}
       value={pwd}
   
@@ -103,6 +105,7 @@ const LoginScreen = ({ navigation }) => {
         marginTop:30,
         backgroundColor:"#FF9720",
         paddingVertical:10,
+     
         borderRadius:23
     }}
     >

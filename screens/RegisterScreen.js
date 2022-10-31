@@ -69,6 +69,7 @@ const  RegisterScreen = ({ navigation }) =>{
         flexDirection:"row",
         alignItems:"center",
         marginHorizontal:55,
+        height:"2%",
         borderWidth:2,
         marginTop:20,
         paddingHorizontal:10,
@@ -93,6 +94,7 @@ const  RegisterScreen = ({ navigation }) =>{
         alignItems:"center",
         marginHorizontal:55,
         borderWidth:2,
+        height:"2%",
         marginTop:15,
         paddingHorizontal:10,
         borderColor:"#00716F",
@@ -119,6 +121,7 @@ const  RegisterScreen = ({ navigation }) =>{
         alignItems:"center",
         marginHorizontal:55,
         borderWidth:2,
+        height:"2%",
         marginTop:15,
         paddingHorizontal:10,
         borderColor:"#00716F",
@@ -146,6 +149,7 @@ const  RegisterScreen = ({ navigation }) =>{
         marginHorizontal:55,
         borderWidth:2,
         marginTop:15,
+        height:"2%",
         paddingHorizontal:10,
         borderColor:"#00716F",
         borderRadius:23,
@@ -172,6 +176,7 @@ const  RegisterScreen = ({ navigation }) =>{
         marginHorizontal:55,
         borderWidth:2,
         marginTop:15,
+        height:"2%",
         paddingHorizontal:10,
         borderColor:"#00716F",
         borderRadius:23,
@@ -197,6 +202,7 @@ const  RegisterScreen = ({ navigation }) =>{
         alignItems:"center",
         marginHorizontal:55,
         borderWidth:2,
+        height:"2%",
         marginTop:15,
         paddingHorizontal:10,
         borderColor:"#00716F",
@@ -224,6 +230,7 @@ const  RegisterScreen = ({ navigation }) =>{
         marginHorizontal:55,
         borderWidth:2,
         marginTop:15,
+        height:"2%",
         paddingHorizontal:10,
         borderColor:"#00716F",
         borderRadius:23,
@@ -232,6 +239,7 @@ const  RegisterScreen = ({ navigation }) =>{
        
        <TextInput 
             secureTextEntry
+            
             placeholder="Confirm Password"
             onChange={(e) => setCpwd(e.nativeEvent.text)}
             value={cpwd}
@@ -274,7 +282,7 @@ const  RegisterScreen = ({ navigation }) =>{
    
 
 }}
-title=" You Have Account? Login" onPress={() => navigation.navigate("Login")} />
+title=" If You Have Account? Login" onPress={() => navigation.navigate("Login")} />
 
 </View>
 

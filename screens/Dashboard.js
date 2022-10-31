@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { View, Text, Button, TouchableOpacity, ScrollView } from "react-native";
+import { View, Text, Button, TouchableOpacity, ScrollView ,Image} from "react-native";
 import dashboardStyles from "../styles/dashboard";
 
 const Dashboard = ({ route, navigation }) => {
@@ -12,6 +12,9 @@ const Dashboard = ({ route, navigation }) => {
 
   return (
     <View style={dashboardStyles.container}>
+                     <Image
+                       style={{width:"100%",height:"35%"}}
+                        source={require('../screens/pic/we.png')} />
       <ScrollView>
         {route.params.userRole.toLocaleLowerCase() === "sitemanager" && (
           <>
@@ -25,7 +28,7 @@ const Dashboard = ({ route, navigation }) => {
               }
               style={dashboardStyles.card}
             >
-              <Text style={{ color: "white" }}>New Order</Text>
+              <Text style={{ color: "white" , fontSize:"20px"}}>New Order</Text>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() =>
@@ -36,7 +39,7 @@ const Dashboard = ({ route, navigation }) => {
               }
               style={dashboardStyles.card}
             >
-              <Text style={{ color: "white" }}>All Orders</Text>
+              <Text style={{ color: "white" ,fontSize:"20px"}}>All Orders</Text>
             </TouchableOpacity>
           </>
         )}
@@ -53,7 +56,7 @@ const Dashboard = ({ route, navigation }) => {
               }
               style={dashboardStyles.card}
             >
-              <Text style={{ color: "white" }}>Quotations</Text>
+              <Text style={{ color: "white",fontSize:"20px" }}>Quotations</Text>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() =>
@@ -64,10 +67,10 @@ const Dashboard = ({ route, navigation }) => {
               }
               style={dashboardStyles.card}
             >
-              <Text style={{ color: "white" }}>Invoices</Text>
+              <Text style={{ color: "white" ,fontSize:"20px"}}>Invoices</Text>
             </TouchableOpacity>
             <TouchableOpacity style={dashboardStyles.card}>
-              <Text style={{ color: "white" }}>Payment</Text>
+              <Text style={{ color: "white" , fontSize:"20px" }}>Payment</Text>
             </TouchableOpacity>
           </>
         )}
@@ -80,7 +83,7 @@ const Dashboard = ({ route, navigation }) => {
           }
           style={dashboardStyles.card}
         >
-          <Text style={{ color: "white" }}>Delivery</Text>
+          <Text style={{ color: "white" ,fontSize:"20px"}}>Delivery</Text>
         </TouchableOpacity>
       </ScrollView>
     </View>
