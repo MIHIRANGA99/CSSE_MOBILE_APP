@@ -1,13 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import {
-  Alert,
-  ScrollView,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { Alert, Button,TouchableOpacity,Text,View,Image, TextInput} from 'react-native';
 import commonStyles from "../styles/common";
 import loginStyles from "../styles/login";
 
@@ -31,35 +24,103 @@ const LoginScreen = ({ navigation }) => {
   };
 
   return (
-    <View style={loginStyles.logPage}>
-      <ScrollView style={{ width: "80%" }}>
-        <View>
-          <TextInput
-            keyboardType="email-address"
-            style={commonStyles.textView}
-            onChange={(e) => setEmail(e.nativeEvent.text)}
-            value={email}
-            placeholder="E-mail Address"
-          />
-          <TextInput
-            secureTextEntry
-            style={commonStyles.textView}
-            onChange={(e) => setPwd(e.nativeEvent.text)}
-            value={pwd}
-            placeholder="Password"
-          />
+  
 
-          <TouchableOpacity
-            style={commonStyles.button}
-            onPress={() => {
-              loginUser();
-            }}
-          >
-            <Text style={commonStyles.buttonText}>Login</Text>
-          </TouchableOpacity>
-        </View>
-      </ScrollView>
+
+<View style={{backgroundColor:"#FFF",height:"230%"}}>
+<Image source ={require('../screens/pic/local.png')}
+        style={{width:"100%",height:"22%"}}
+    />
+   
+   
+    <Text
+     style={{
+         fontSize:39,
+         
+         alignSelf:"center",
+     }}
+    >Login</Text>
+
+<View
+     style={{
+        flexDirection:"row",
+        alignItems:"center",
+        marginHorizontal:55,
+        borderWidth:2,
+        marginTop:15,
+        paddingHorizontal:10,
+        borderColor:"#00716F",
+        borderRadius:23,
+        paddingVertical:2
+    }}>
+
+    <TextInput
+   
+
+   placeholder="Email Address"
+   placeholderTextColor="#00716F"
+   onChange={(e) => setEmail(e.nativeEvent.text)}
+   value={email}
+  
+    />
+
     </View>
+
+     <View
+     style={{
+        flexDirection:"row",
+        alignItems:"center",
+        marginHorizontal:55,
+        borderWidth:2,
+        marginTop:15,
+        paddingHorizontal:10,
+        borderColor:"#00716F",
+        borderRadius:23,
+        paddingVertical:2
+    }}>
+
+    <TextInput
+   
+   secureTextEntry
+   placeholder="Password"
+   placeholderTextColor="#00716F"
+   style={{paddingHorizontal:10}}
+      onChange={(e) => setPwd(e.nativeEvent.text)}
+      value={pwd}
+  
+    />
+
+    </View>
+    <TouchableOpacity
+
+      onPress={() => {
+        loginUser();
+      }}
+      style={{
+        marginHorizontal:55,
+        alignItems:"center",
+        justifyContent:"center",
+        marginTop:30,
+        backgroundColor:"#FF9720",
+        paddingVertical:10,
+        borderRadius:23
+    }}
+    >
+      <Text >Login</Text>
+    </TouchableOpacity>
+    <Button 
+  style={{
+    marginHorizontal:55,
+    alignItems:"center",
+    justifyContent:"center",
+   
+
+}}
+title="  You Don't  Have Account? Login" onPress={() => navigation.navigate("Register")} />
+  </View>
+
+
+
   );
 };
 
